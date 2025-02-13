@@ -8,6 +8,22 @@
   <link rel="stylesheet" media="screen" href="css/screen.css" />
 </head>
 <body>
-
+  <main>
+    <form action="/submit" method="post" autocomplete="on">
+	  <div class="form-group">
+	    <label for="email">Email Adress:</label>
+		<input type="email" id="email" name="email" required autocomplete="email" placeholder="YOURemail@email.com">
+	  </div>
+	  <div class="form-group">
+	    <label for="phone">Phone Number:</label>
+		<input type="phone" id="phone" name="phone" required autocomplete="phone" placeholder="773-202-LUNA" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+	  </div>
+	  <div class="form-group">
+	    <label for="dob">Date of Birth:</label>
+		<label type="date" id="dob" name="dob" required autocomplete="dob" max="2029-12-31">
+	  </div>
+	  <input type="submit" value="submit>
+	</form>
+  </main>
 </body>
 </html>
